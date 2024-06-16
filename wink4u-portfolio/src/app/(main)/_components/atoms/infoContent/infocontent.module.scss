@@ -1,0 +1,16 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.infoContentContainer{
+    @include f.flex(row, center, center, 10px);
+
+    .infoContentMain {
+        @include f.flex(row, center, center, 10px);
+
+        p {
+            font-size: var.$p2;
+            font-weight: var.$fw-400;
+            color: var.$black-500;
+        }
+    }
+}

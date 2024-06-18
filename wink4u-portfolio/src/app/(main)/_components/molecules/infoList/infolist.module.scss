@@ -1,0 +1,8 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.infoList {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}

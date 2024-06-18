@@ -45,7 +45,7 @@ const INFO_LIST: InfoItem[] = [
         id: 5,
         icon: FaUserGraduate,
         title: '학력',
-        content: '한국공학대학교 전자공학부 학사 졸업'
+        content: '한국공학대학교 전자공학부'
     },
 ]
 

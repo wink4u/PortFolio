@@ -1,0 +1,7 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.contentBoxContainer {
+    background-color: var.$white;
+    border-radius: 20px;
+}

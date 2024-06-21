@@ -1,0 +1,13 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.skillList {
+    @include f.flex(column, center, center, 0);
+
+    .skillImgArticle {
+        width: 100%;
+        .skillImg {
+            height: 30px;
+        }
+    }
+}

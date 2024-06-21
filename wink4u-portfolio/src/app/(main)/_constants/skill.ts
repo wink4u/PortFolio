@@ -28,7 +28,7 @@ export interface skillItem {
     img: StaticImageData;
 }
 
-const FRONTEND_LIST: skillItem[] = [
+export const FRONTEND_LIST: skillItem[] = [
     {
         id: 0,
         img: HTMLCSSJS,
@@ -75,7 +75,7 @@ const FRONTEND_LIST: skillItem[] = [
     },
 ]
 
-const BACKEND_LIST: skillItem[] = [
+export const BACKEND_LIST: skillItem[] = [
     {
         id: 0,
         img: PYTHON,
@@ -90,14 +90,14 @@ const BACKEND_LIST: skillItem[] = [
     },
 ]
 
-const MOBILE_LIST: skillItem[] = [
+export const MOBILE_LIST: skillItem[] = [
     {
         id: 0,
         img: ANDROID,
     }
 ]
 
-const VERSION_LIST: skillItem[] = [
+export const VERSION_LIST: skillItem[] = [
     {
         id: 0,
         img: GIT,
@@ -108,7 +108,7 @@ const VERSION_LIST: skillItem[] = [
     },
 ]
 
-const COMMUNICATION_LIST: skillItem[] = [
+export const COMMUNICATION_LIST: skillItem[] = [
     {
         id: 0,
         img: JIRA,
@@ -119,10 +119,12 @@ const COMMUNICATION_LIST: skillItem[] = [
     },
 ]
 
-export {
+const Skill = {
     FRONTEND_LIST,
     BACKEND_LIST,
     MOBILE_LIST,
     VERSION_LIST,
     COMMUNICATION_LIST,
 };
+
+export default Skill;

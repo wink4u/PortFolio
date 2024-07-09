@@ -5,33 +5,27 @@
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
-    width: 100%;
+    width: 300px;
 
-    @media (min-width: 600px) {
-        width: 50%;
-    }
-
-    @media (min-width: 900px) {
-        width: 33.33%;
-    }
-
-    .infoIcon {
-        color: var.$black-500;
-        font-size: 30px;
-        margin-right: 10px;
+    .infoIconContent{
+        margin-right: 20px;
+        .infoIcon {
+            color: var.$black-500;
+            font-size: 30px;
+        }
     }
 
     .infoItemMain {
         @include f.flex(column, start, start, 10px);
 
         .infoTitle {
-            font-size: var.$h3;
+            font-size: var.$h2;
             font-weight: var.$fw-600;
             color: var.$black-500;
         }
 
         .infoContent {
-            font-size: var.$p3;
+            font-size: var.$p1;
             font-weight: var.$fw-400;
             color: var.$black-500;
         }

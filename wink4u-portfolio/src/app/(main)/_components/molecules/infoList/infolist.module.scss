@@ -1,8 +1,26 @@
 @use '../../../../../styles/base/variable' as var;
 @use '../../../../../styles/mixins/flex' as f;
 
-.infoList {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+.infoListContainer {
+    @include f.flex(row, center, center, 0);
+    margin-top: 50px;
+    .infoList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 기본적으로 3열
+        gap: 50px; // 아이템 간의 간격 추가
+        width: 1000px;
+        
+    
+        @media (min-width: 1268px) {
+            grid-template-columns: repeat(3, 1fr); // 중간에서 큰 화면에서는 3열
+        }
+    
+        @media (min-width: 920px) and (max-width: 1268px) {
+            grid-template-columns: repeat(2, 1fr); // 작은 화면에서는 2열
+        }
+    
+        @media (min-width: 479px) and (max-width: 920px) {
+            grid-template-columns: repeat(1, 1fr); // 매우 작은 화면에서는 1열
+        }
+    }
 }

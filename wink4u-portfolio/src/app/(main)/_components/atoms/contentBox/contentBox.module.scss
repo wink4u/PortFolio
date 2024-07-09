@@ -2,6 +2,7 @@
 @use '../../../../../styles/mixins/flex' as f;
 
 .contentBoxContainer {
+    @include f.flex(column, center, center, 10);
     background-color: var.$white;
     border-radius: 20px;
 }

@@ -1,6 +1,7 @@
 import LayoutBottomMargin, { LayoutTopMargin } from "@/app/(main)/_constants/margin";
 import LayoutPadding from "@/app/(main)/_constants/padding";
 import classNames from "classnames";
+import styles from './layout.module.scss';
 import { ReactNode } from "react";
 
 interface LayoutProps {
@@ -12,7 +13,7 @@ interface LayoutProps {
 
 export default function Layout({ children, marginTop, marginBottom, padding, ...rest} : LayoutProps) {
     return(
-        <div className={classNames('layout', marginTop, marginBottom, padding)} {...rest}>
+        <div className={classNames(`${styles.layout}`, marginTop, marginBottom, padding)} {...rest}>
             {children}
         </div>
     )

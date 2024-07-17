@@ -1,11 +1,7 @@
-import Info from "./_components/template/Info/page";
-import Skill from "./_components/template/Skill/page";
+import Info from "./_components/page/Info/page";
 
 export default function Main() {
     return (
-        <>
-          <Info />
-          <Skill />
-        </>
+      <Info />
     )
 }

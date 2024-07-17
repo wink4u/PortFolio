@@ -12,13 +12,15 @@ interface ContentsLayoutProps {
 
 }
 
-export default function ContentsLayout({ children, marginTop, marginBottom, marginLR, padding, ...rest } : ContentsLayoutProps) {
+function ContentsLayout({ children, marginTop, marginBottom, marginLR, padding, ...rest } : ContentsLayoutProps) {
     return (
         <div className={classNames('contentsLayoutContainer', marginTop, marginBottom, marginLR, padding)} {...rest}>
           {children}
         </div>
     )
 }
+
+export default ContentsLayout;
 
 ContentsLayout.defaultProps = {
     marginTop: LayoutTopMargin.mt0,

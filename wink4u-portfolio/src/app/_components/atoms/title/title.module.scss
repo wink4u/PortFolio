@@ -1,0 +1,12 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.titleContainer {
+    @include f.flex(column, center, center, 0);
+    margin: 30px 0px;
+    .title{
+        font-size: 80px;
+        font-weight: var.$fw-600;
+        color: var.$black-600;
+    }
+}

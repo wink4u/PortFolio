@@ -1,5 +1,6 @@
-@use '../../../../../styles/base/variable' as var;
-@use '../../../../../styles/mixins/flex' as f;
+@use '../../../../styles/base/variable' as var;
+@use '../../../../styles/mixins/flex' as f;
+
 .projectDescribeContainer{
     @include f.flex(column, start, start, 5px);
     width: 600px;

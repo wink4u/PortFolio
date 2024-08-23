@@ -1,0 +1,51 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+.projectDescribeContainer{
+    @include f.flex(column, start, start, 5px);
+    width: 600px;
+    .projectDescribeMain{
+        margin: 20px 0px;
+    
+        .projectDescribeTitle {
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: var.$fw-700;
+        }
+    
+        .projectWhatMain {
+            margin: 10px 0px;
+            @include f.flex(column, start, start, 10px);
+    
+            .projectWhatMainTitle{
+                font-size: 20px;
+                font-weight: bold;
+            }
+    
+            .projectWhatSub {
+                h4{
+                    margin-bottom: 6px;
+                    font-size: 18px;
+                    font-weight: var.$fw-500;
+                }
+    
+                .projectWhatSsub {
+                    li {
+                        font-size: 16px;
+                        font-weight: var.$fw-400;
+                    }
+                }
+            }
+        }
+    
+        .projectWhatSkill {
+            li {
+                margin: 5px 0px;
+                strong {
+                    font-weight: bold;
+                }
+                font-size: 16px;
+                font-weight: var.$fw-400;
+            }
+        }
+    }
+}

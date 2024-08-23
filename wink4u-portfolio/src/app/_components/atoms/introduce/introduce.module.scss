@@ -1,0 +1,9 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.IntroduceContainer{
+    @include f.flex(column, center, center, 10px);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 80px 0px;
+}

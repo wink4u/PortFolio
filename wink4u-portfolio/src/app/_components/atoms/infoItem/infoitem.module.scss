@@ -1,0 +1,33 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.infoItemContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    width: 300px;
+
+    .infoIconContent{
+        margin-right: 20px;
+        .infoIcon {
+            color: var.$black-500;
+            font-size: 30px;
+        }
+    }
+
+    .infoItemMain {
+        @include f.flex(column, start, start, 10px);
+
+        .infoTitle {
+            font-size: var.$h2;
+            font-weight: var.$fw-600;
+            color: var.$black-500;
+        }
+
+        .infoContent {
+            font-size: var.$p1;
+            font-weight: var.$fw-400;
+            color: var.$black-500;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@use '../../../../../styles/base/variable.scss' as var;;
+
+.contentsLayoutContainer {
+    font-size: var.$p1;
+}

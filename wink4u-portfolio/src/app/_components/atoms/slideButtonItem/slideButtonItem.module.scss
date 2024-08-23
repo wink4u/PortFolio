@@ -1,0 +1,13 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.slideButton {
+    @include f.flex(row, center, center, 0);
+    width: 40px;
+    height: 40px;
+
+    p {
+        font-size: var.$p0;
+        font-weight: bold;
+    }
+}

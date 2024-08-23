@@ -1,0 +1,28 @@
+@use '../../../../../styles/base/variable' as var;
+@use '../../../../../styles/mixins/flex' as f;
+
+.pjTitle {
+    @include f.flex(column, center, center, 10px);
+    margin: 20px 0px;
+    .projectName {
+        font-size: 50px;
+        font-weight: var.$fw-600;
+    }
+
+    .projectDate {
+        @include f.flex(row, between, center, 15px);
+        font-size: var.$h3;
+    }
+
+    .projectDescribe {
+        font-size: var.$h2;
+    }
+}
+
+.pjContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}

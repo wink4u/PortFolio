@@ -1,5 +1,5 @@
 import ProjectData from "@/app/_constants/project"
-import ProjectContent from "../projectContent/projectContent"
+import ProjectContent from "../../organisms/projectContent/projectContent"
 import styles from './projectList.module.scss';
 
 export default function ProjectList() {

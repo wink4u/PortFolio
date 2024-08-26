@@ -1,0 +1,38 @@
+@use '../../../../styles/base/variable' as var;
+@use '../../../../styles/mixins/flex' as f;
+
+.StackItemContainer {
+    gap: 30px;
+
+    header {
+        font-size: var.$h1;
+        font-weight: var.$fw-600;
+    }
+
+    .StackContentsDiv {
+        .StackSkills {
+            margin: 10px 0;
+            font-size: var.$p2;
+            font-weight: var.$fw-600;
+            
+            @include f.flex(row, start, start, 15px);
+            flex-wrap: wrap;
+            p {
+                border-radius: 10px;
+                padding: 3px 10px;
+                background-color: var.$black-100;
+                color: var.$danger;
+
+            }
+        }
+
+        .StackContents {
+            display: inline-block;
+            margin: 10px 0;
+            @include f.flex(column, start, start, 10px);
+            font-size: var.$h3;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    }
+}

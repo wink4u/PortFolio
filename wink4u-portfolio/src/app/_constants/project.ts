@@ -14,7 +14,59 @@ import Refill2 from "@/img/project_img/Refill2.png"
 import Refill3 from "@/img/project_img/Refill3.png"
 import Refill4 from "@/img/project_img/Refill4.png"
 import Refill5 from "@/img/project_img/Refill5.png"
+import PortFolio1 from "@/img/project_img/PortFolio1.png";
+import PortFolio2 from "@/img/project_img/PortFolio2.png";
+import PortFolio3 from "@/img/project_img/PortFolio3.png";
+import PortFolio4 from "@/img/project_img/PortFolio4.png";
 import { projectItem, showProject } from "../_types/project";
+
+const PortFolio: projectItem = {
+    name: "wink4u's PortFolio",
+    date: '2023.06 ~ 2023.08 (9주)',
+    member: '1인 개인프로젝트',
+    describe:'프론트엔드 개발자 김승현의 Next 포트폴리오',
+    skill: {
+        Frontend: 'TypeScript, Next.js, SCSS',
+        DevOps: 'AWS EC2, NGINX',
+    },
+    whatIdid: [
+        {
+            id: 0,
+            main: 'Frontend 개발',
+            sub: [
+                {
+                    id : 0,
+                    sub: 'Next.js App Router',
+                    ssub: [
+                        'React가 아닌 Next.js로 웹 페이지 구성',
+                        'Next.js 13 에서 새로운 App Router로 제작'
+                    ]
+                }, 
+                {
+                    id : 1,
+                    sub: 'Interceping Router',
+                    ssub: [
+                        'Modal을 Intercepting Router로 제작',
+                        '기존 Modal과 달리 페이지 전환식으로 표현'
+                    ]
+                },
+                {
+                    id: 2,
+                    sub: 'SCSS',
+                    ssub: [
+                        'variable.scss, mix.scss로 전체 css를 조율'
+                    ]
+                }
+            ]
+        },
+    ],
+    imgs : [
+        PortFolio1,
+        PortFolio2,
+        PortFolio3,
+        PortFolio4,
+    ]
+}
 
 const PlayPlace: projectItem = {
     name: 'PlayPlace',
@@ -203,14 +255,18 @@ const Refill: projectItem = {
 const Project: showProject[] = [
     {
         id: 0,
+        project: PortFolio
+    },
+    {
+        id: 1,
         project: PlayPlace,
     }, 
     {
-        id: 1,
+        id: 2,
         project: Foody,
     },
     {
-        id: 2,
+        id: 3,
         project: Refill,
     }
 ]

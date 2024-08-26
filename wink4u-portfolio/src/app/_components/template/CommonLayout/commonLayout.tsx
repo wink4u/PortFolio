@@ -20,7 +20,6 @@ export default function CommonLayout({ children } : CommonLayoutProps) {
               <li className={styles.navitem}><Link href="/">Info</Link></li>
               <li className={styles.navitem}><Link href="/skill">Skill</Link></li>
               <li className={styles.navitem}><Link href="/projects">Projects</Link></li>
-              <li className={styles.navitem}><Link href="/contact">Contact</Link></li>
             </ul>
             <div className={styles.sns}>
               <SnsLogoList />

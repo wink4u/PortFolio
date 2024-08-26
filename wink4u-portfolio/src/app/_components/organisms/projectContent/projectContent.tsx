@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { projectItem } from "@/app/_types/project";
 import ContentBox from "../../atoms/contentBox/contentBox";
 import SlideButtonList from "../../molecules/slideButtonList/slideButtonList";
@@ -8,8 +11,26 @@ interface projectContentProps {
   project: projectItem;
 }
 export default function projectContent({project} : projectContentProps) {
+    const [boxWidth, setBoxWidth] = useState("1150px");
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth <= 1312) {
+          setBoxWidth("800px");
+        } else {
+          setBoxWidth("1150px");
+        }
+      };
+
+      handleResize(); // 초기 실행
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
     return(
-      <ContentBox boxWidth="1150px">
+      <ContentBox boxWidth={boxWidth}>
         <div className={styles.pjTitle}>
           <p className={styles.projectName}>{project.name}</p>
           <div className={styles.projectDate}>

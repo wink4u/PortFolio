@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 
 type Props = {
   children: React.ReactNode,
+  modal: React.ReactNode,
 }
 
 export default function RootLayout({
-  children
+  children, modal
 }: Props) {
   return (
     <html lang="en">
       <body>
           <CommonLayout>
             {children}
+            {modal}
           </CommonLayout>
         </body>
     </html>

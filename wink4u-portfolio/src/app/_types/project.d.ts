@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface projectSkill {
     Frontend: string;
-    Backend: string;
+    Backend?: string;
     DevOps: string;
 }
 

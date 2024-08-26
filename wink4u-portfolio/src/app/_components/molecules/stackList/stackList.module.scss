@@ -1,0 +1,8 @@
+@use '../../../../styles/base/variable' as var;
+@use '../../../../styles/mixins/flex' as f;
+
+.StackListDiv {
+    @include f.flex(column, start, start, 30px);
+    width: 100%; /* StackList가 부모의 너비에 맞도록 설정 */
+    max-width: 80vw;
+}

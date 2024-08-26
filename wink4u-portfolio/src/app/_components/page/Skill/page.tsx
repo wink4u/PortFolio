@@ -6,7 +6,7 @@ export default function Skill() {
     return(
       <SkillTemplate>
         <Title value="SKILL" color="white" />
-        <MoveDetail href="/skill/describe" back="rgb(29, 155, 240)" />
+        <MoveDetail href="/skill/describe" back="white" color="#ff8a00"/>
         <SkillContent />
       </SkillTemplate>
     )

@@ -1,12 +1,17 @@
 @use '../../../../styles/base/variable' as var;
 @use '../../../../styles/mixins/flex' as f;
 
-.moveDetail {
-    width: 300px;
-    height: 40px;
-    border-radius: 20px;
-    color: white;
-    font-size: var.$h2;
-    border: none;
+.moveDetailDiv {
     @include f.flex(column, center, center, 0);
+    
+    .moveDetail {
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        color: white;
+        font-size: var.$h2;
+        font-weight: var.$fw-600;
+        border: none;
+        @include f.flex(column, center, center, 0);
+    }
 }

@@ -4,11 +4,12 @@ import styles from "./moveDetail.module.scss";
 interface MoveDetailProps {
   href: string;
   back: string;
+  color: string;
 }
-export default function MoveDetail({ href, back }: MoveDetailProps) {
+export default function MoveDetail({ href, back, color }: MoveDetailProps) {
     return(
-      <div>
-        <Link href={href} style={{backgroundColor: back}} className={styles.moveDetail}>계정 만들기</Link>
+      <div className={styles.moveDetailDiv}>
+        <Link href={href} style={{backgroundColor: back, color: color}} className={styles.moveDetail}>STACK Detail</Link>
       </div>
     )
 }

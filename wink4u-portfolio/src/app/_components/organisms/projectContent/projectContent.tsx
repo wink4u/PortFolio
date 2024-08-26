@@ -7,10 +7,10 @@ import SlideButtonList from "../../molecules/slideButtonList/slideButtonList";
 import ProjectDescribe from "../../molecules/projectDescribe/projectDescribe";
 import styles from './projectContent.module.scss';
 
-interface projectContentProps {
+interface ProjectContentProps {
   project: projectItem;
 }
-export default function projectContent({project} : projectContentProps) {
+export default function ProjectContent({project} : ProjectContentProps) {
     const [boxWidth, setBoxWidth] = useState("1150px");
 
     useEffect(() => {

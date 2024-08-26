@@ -14,10 +14,10 @@ import Refill2 from "@/img/project_img/Refill2.png"
 import Refill3 from "@/img/project_img/Refill3.png"
 import Refill4 from "@/img/project_img/Refill4.png"
 import Refill5 from "@/img/project_img/Refill5.png"
-import PortFolio1 from "@/img/project_img/PortFolio1.png";
-import PortFolio2 from "@/img/project_img/PortFolio2.png";
-import PortFolio3 from "@/img/project_img/PortFolio3.png";
-import PortFolio4 from "@/img/project_img/PortFolio4.png";
+import WPortFolio1 from "@/img/project_img/PortFolio1.png";
+import WPortFolio2 from "@/img/project_img/PortFolio2.png";
+import WPortFolio3 from "@/img/project_img/PortFolio3.png";
+import WPortFolio4 from "@/img/project_img/PortFolio4.png";
 import { projectItem, showProject } from "../_types/project";
 
 const PortFolio: projectItem = {
@@ -61,10 +61,10 @@ const PortFolio: projectItem = {
         },
     ],
     imgs : [
-        PortFolio1,
-        PortFolio2,
-        PortFolio3,
-        PortFolio4,
+        WPortFolio1,
+        WPortFolio2,
+        WPortFolio3,
+        WPortFolio4,
     ]
 }
 

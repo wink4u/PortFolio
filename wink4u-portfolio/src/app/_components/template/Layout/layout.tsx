@@ -13,7 +13,9 @@ interface LayoutProps {
 
 export default function Layout({ children, marginTop, marginBottom, padding, ...rest} : LayoutProps) {
     return(
-        <div className={classNames(`${styles.layout}`, marginTop, marginBottom, padding)} {...rest}>
+        <div className={classNames(`${styles.layout}`,  marginTop && marginTop.toString(), 
+        marginBottom && marginBottom.toString(), 
+        padding && padding.toString())} {...rest}>
             {children}
         </div>
     )

@@ -33,8 +33,8 @@ export default function projectDescribe({skill, whatIdid} : projectDescribeProps
           <div className={styles.projectListMain}>
             <h2 className={styles.projectListTitle}>SKILL</h2>
             <ul className={styles.projectWhatSkill}>
-              <li><strong>⭐ Frontend:</strong> {skill.Frontend}</li>
-              <li><strong>⭐ Backend:</strong> {skill.Backend}</li>
+              <li><strong>⭐ Frontend:</strong> {skill.Frontend}</li>  
+              {skill.Backend && <li><strong>⭐ Backend:</strong> {skill.Backend}</li>}         
               <li><strong>⭐ DevOps:</strong> {skill.DevOps}</li>
             </ul>
           </div>

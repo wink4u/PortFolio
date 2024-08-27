@@ -1,4 +1,4 @@
-import LayoutBottomMargin, { LayoutLeftRightMargin, LayoutTopMargin } from "@/app/_constants/margin";
+import LayoutTopMargin, {LayoutBottomMargin,  LayoutLeftRightMargin } from "@/app/_constants/margin";
 import LayoutPadding from "@/app/_constants/padding";
 import classNames from "classnames";
 import { ReactNode } from "react";

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import Layout from "../Layout/layout";
+import Layout from "../ProjectLayout/projectLayout";
 import ContentsLayout from "../ContentsLayout/contentsLayout";
-import LayoutBottomMargin, { LayoutTopMargin } from "@/app/_constants/margin";
+import LayoutTopMargin, { LayoutBottomMargin } from "@/app/_constants/margin";
 import LayoutPadding from "@/app/_constants/padding";
 import styles from './InfoTemplate.module.scss';
 

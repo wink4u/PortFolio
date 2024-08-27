@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "프론트엔드 개발자 PortFolio",
     title: "wink4u's Portfolio",
-    description: "프론트엔드 김승현의 포트폴리오 입니다.",
+    description: "프론트엔드 개발자 김승현의 포트폴리오 입니다.",
     images: "/OpenGraph.png",
     url: "https://wink4u.site",
   },

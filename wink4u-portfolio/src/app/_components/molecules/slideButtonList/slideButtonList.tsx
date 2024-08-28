@@ -30,11 +30,11 @@ export default function SlideButtonList({ images } : SlideButtonListProps) {
         <div className={styles.slideButtonListContainer}>
           <ImageSlider images={images} currentIndex={currentIndex}/>
           <div className={styles.slideButtonList}>
-            <SlideButtonItem buttonClick={handlePrevious} value="<" />
+            <SlideButtonItem buttonClick={handlePrevious} isActive={false} value="<" />
             {images.map((_, index) => (
-                <SlideButtonItem key={index} buttonClick={() => handleSelectImage(index)} value={`${index + 1}`} />
+                <SlideButtonItem key={index} buttonClick={() => handleSelectImage(index)} isActive={index === currentIndex} value={`${index + 1}`} />
             ))}
-            <SlideButtonItem buttonClick={handleNext} value=">" />
+            <SlideButtonItem buttonClick={handleNext} isActive={false} value=">" />
           </div>
         </div>
     );

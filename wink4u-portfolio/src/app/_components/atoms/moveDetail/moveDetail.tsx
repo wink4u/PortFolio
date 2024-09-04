@@ -9,7 +9,7 @@ interface MoveDetailProps {
 export default function MoveDetail({ href, back, color }: MoveDetailProps) {
     return(
       <div className={styles.moveDetailDiv}>
-        <Link href={href} style={{backgroundColor: back, color: color}} className={styles.moveDetail}>STACK Detail</Link>
+        <Link href={href} style={{backgroundColor: back, color: color, boxShadow: back}} className={styles.moveDetail}>STACK Detail</Link>
       </div>
     )
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ContentBox from "../../atoms/contentBox/contentBox";
-import ARCHIVING_GITHUB from "@/img/archiving_img/ARCHIVE_GITHUB.webp"
+import ARCHIVING_GITHUB from "@/img/archiving_img/ARCHIVE_GITHUB.png"
 import styles from "./archivingContent.module.scss"
 
 

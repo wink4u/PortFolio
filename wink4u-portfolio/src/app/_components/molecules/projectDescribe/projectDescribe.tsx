@@ -1,13 +1,15 @@
 import { projectSkill, projectWhat } from '@/app/_types/project';
 import styles from './projectDescribe.module.scss';
+import MoveDetail from '../../atoms/moveDetail/moveDetail';
 
 interface projectDescribeProps {
     skill: projectSkill;
     whatIdid: projectWhat[];
+    move : string;
 }
 
 
-export default function projectDescribe({skill, whatIdid} : projectDescribeProps) {
+export default function projectDescribe({skill, whatIdid, move} : projectDescribeProps) {
     return(
         <div className={styles.projectDescribeContainer}>
           <div className={styles.projectDescribeMain}>
@@ -29,6 +31,9 @@ export default function projectDescribe({skill, whatIdid} : projectDescribeProps
                 ))}
               </div>
             ))}
+          </div>
+          <div>
+            <MoveDetail href={`/projects/${move}`} back='black' color='white' content='Read Me' />
           </div>
           <div className={styles.projectListMain}>
             <h2 className={styles.projectListTitle}>SKILL</h2>

@@ -42,7 +42,7 @@ export default function ProjectContent({project} : ProjectContentProps) {
         <div className={styles.pjContent}>
           <SlideButtonList images={project.imgs} />
           <div>
-            <ProjectDescribe skill={project.skill} whatIdid={project.whatIdid} />
+            <ProjectDescribe skill={project.skill} whatIdid={project.whatIdid} move={project.move} />
           </div>
         </div>
       </ContentBox>

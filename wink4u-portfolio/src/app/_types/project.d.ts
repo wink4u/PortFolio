@@ -20,6 +20,7 @@ export interface projectWhat {
 
 export interface projectItem {
     name: string;
+    move: string;
     member?: string;
     date: string;
     describe: string;

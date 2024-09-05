@@ -25,6 +25,7 @@ const PortFolio: projectItem = {
     date: '2023.06 ~ 2023.08 (9주)',
     member: '1인 개인프로젝트',
     describe:'프론트엔드 개발자 김승현의 Next 포트폴리오',
+    move: 'wink4u_portfolio',
     skill: {
         Frontend: 'TypeScript, Next.js, SCSS',
         DevOps: 'AWS EC2, NGINX',
@@ -73,6 +74,7 @@ const PlayPlace: projectItem = {
     date: '2023.10 ~ 2023.11 (6주)',
     member: '6인 팀 프로젝트 - 기여도 20%',
     describe:'함께 만드는 위치 기반 공유 플레이리스트 서비스',
+    move: 'playplace',
     skill: {
         Frontend: 'TypeScript, Next.js, Recoil, Styled-Component, Android Studio, WebSocket',
         Backend: 'Spring Boot, JPA, Redis, MySQL, Spring Scheduler, WebSocket',
@@ -140,6 +142,7 @@ const Foody: projectItem = {
     date: '2023.08 ~ 2023.10 (7주)',
     member: '6인 팀 프로젝트 - 기여도 25%',
     describe:'일일 권장 영양소와 보유 식재료를 고려한 식단 및 레시피 추천 서비스',
+    move: 'foody',
     skill: {
         Frontend: 'TypeScript, React.js, Recoil, SCSS, PWA',
         Backend: 'Spring Boot, JPA, Redis, MySQL, Rest Docs, Python, FastAPI',
@@ -205,6 +208,7 @@ const Refill: projectItem = {
     date: '2023.07 ~ 2023.08 (7주)',
     member: '6인 팀 프로젝트 - 기여도 25%',
     describe:'탈모 고민을 하고 있는 사용자를 위한 비대면 상담 플랫폼 서비스',
+    move: 'refill',
     skill: {
         Frontend: 'TypeScript, React.js, Redux, Styled-Component',
         Backend: 'Spring Boot, JPA, Redis, QueryDSL, Rest Docs, MariaDB, Flask,Teachable Machine', 

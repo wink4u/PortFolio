@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import CommonLayout from "./_components/template/CommonLayout/commonLayout";
 import "@/styles/index.scss";
 
 export const metadata: Metadata = {
@@ -29,11 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-          <CommonLayout>
-            {children}
-            {modal}
-          </CommonLayout>
-        </body>
+          {children}
+          {modal}
+      </body>
     </html>
   );
 }

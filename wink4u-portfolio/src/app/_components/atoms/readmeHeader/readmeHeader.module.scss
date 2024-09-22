@@ -1,0 +1,50 @@
+@use '../../../../styles/base/variable' as var;
+@use '../../../../styles/mixins/flex' as f;
+
+.container {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+    background-color: burlywood;
+    color: white;
+    @include f.flex(row, start, center, 20px);
+
+    .closeButton {
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        border: none;
+        cursor: pointer;
+        background-color: #fff;
+        position: absolute;
+        left: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .closeButton:hover {
+        background-color: rgba(15,20,25, 0.1);
+    }
+    
+    @media all and (min-width: 687px) {
+        .closeButton {
+            left: 16px;
+        }
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .closeButton {
+            background-color: black;
+        }
+        .closeButton svg {
+            fill: white;
+        }
+    }
+
+    .headerTitle {
+        font-size: var.$h1;
+        margin-left: 100px;
+        font-weight: var.$fw-600;
+    }
+}

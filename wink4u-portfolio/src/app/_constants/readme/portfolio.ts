@@ -1,5 +1,5 @@
 import { readmeItem, showReadme } from "../../_types/readme";
-import PortFolioIntro from "../../../public/OpenGraph.png";
+import PortFolioIntro from "@/img/readme_img/PortFolio/PortfolioIntro.png";
 import PortFolioIdoRouting1 from "@/img/readme_img/PortFolio/Routing1.png"
 import PortFolioIdoRouting2 from "@/img/readme_img/PortFolio/Routing2.png"
 import PortFolioIdoRouting3 from "@/img/readme_img/PortFolio/Routing3.png"

@@ -1,0 +1,61 @@
+@use '../../../../styles/base/variable' as var;
+@use '../../../../styles/mixins/flex' as f;
+
+.troubleContainer {
+    margin-bottom: 100px;
+
+    .troubleTitle {
+        font-size: 35px;
+        font-weight: var.$fw-500;
+        margin-bottom: 20px;
+    }
+
+    .troubleContent{
+        .troubleTitle {
+            font-size: 25px;
+            font-weight: var.$fw-400;
+            margin-bottom: 20px;
+        }
+
+        .troubleImgContainer{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+            .troubleImg{
+                height: auto;
+                width: auto;
+                max-width: 1600px;
+                max-height: 800px;
+            }
+        }
+
+        .troubleContent {
+            font-size: 18px;
+            margin: 20px 0px;
+        }
+    }
+    .solutionTitle{
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+    .solutionContent{
+
+        .solutionImgContainer{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+
+            .solutionImg{
+                height: auto;
+                width: auto;
+                max-width: 700px;
+                max-height: 500px;
+            }
+        }
+
+        .solutionContent {
+            font-size: 18px;
+            margin: 20px 0px;
+        }
+    }
+}

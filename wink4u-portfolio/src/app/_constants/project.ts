@@ -39,27 +39,40 @@ const PortFolio: projectItem = {
                     id : 0,
                     sub: 'Next.js App Router',
                     ssub: [
-                        'React가 아닌 Next.js로 웹 페이지 구성',
-                        'Next.js 13 에서 새로운 App Router로 제작'
+                        'Next.js App Router의 폴더구조와 동작 방식에 대한 이해',
+                        'Modal을 Inercepting Router를 활용'
                     ]
                 }, 
                 {
                     id : 1,
-                    sub: 'Interceping Router',
-                    ssub: [
-                        'Modal을 Intercepting Router로 제작',
-                        '기존 Modal과 달리 페이지 전환식으로 표현'
-                    ]
+                    sub: ' Modal을 Inercepting Router를 활용',
                 },
                 {
                     id: 2,
-                    sub: 'SCSS',
+                    sub: 'Atomic Design을 도입하여 Component를 분리, 폴더를 명확히 구분하여 개W 편의성을 높임',
                     ssub: [
-                        'variable.scss, mix.scss로 전체 css를 조율'
+                        '대부분의 Component 코드 길이를 70줄 이내로 작성'
+                    ]
+                },
+                {
+                    id: 3,
+                    sub: '공통 레이아웃 구현',
+                    ssub: [
+                        '그룹별 레이아웃을 관리하여 개발 편의성을 높임 '
                     ]
                 }
             ]
         },
+        {
+            id: 1,
+            main: 'DevOps',
+            sub: [
+                {
+                    id: 0,
+                    sub: 'EC2, NGINX를 사용하여 서버 배'
+                }
+            ]
+        }
     ],
     imgs : [
         WPortFolio1,
@@ -184,13 +197,6 @@ const Foody: projectItem = {
                         '식단 등록을 통한 채워지는 영양소양을 미리 볼 수 있도록 구현하여 UX향상'
                     ]
                 },
-                {
-                    id: 2,
-                    sub: '공통 Componenet',
-                    ssub: [
-                        'Atomic 디자인을 활용하여 Component 재활용성 증가'
-                    ]
-                }
             ]
         },
     ],

@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface readmeIntroData {
     introImg: StaticImageData;
     introContent: string[];
+    introfunction?: string[];
 }
 
 export interface reademeWhatIdoData {

@@ -2,7 +2,7 @@ import Title from "../../atoms/title/title";
 import SkillTemplate from "../../template/SkillTemplate/skillTemplate";
 import SkillContent from "../../organisms/skillContent/skillContent";
 import MoveDetail from "../../atoms/moveDetail/moveDetail";
-import CommonLayout from "../../template/CommonLayout/CommonLayout";
+import CommonLayout from '../../template/CommonLayout/commonLayout';
 
 export default function Skill() {
     return(

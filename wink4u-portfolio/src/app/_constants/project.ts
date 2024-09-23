@@ -49,7 +49,7 @@ const PortFolio: projectItem = {
                 },
                 {
                     id: 2,
-                    sub: 'Atomic Design을 도입하여 Component를 분리, 폴더를 명확히 구분하여 개W 편의성을 높임',
+                    sub: 'Atomic Design을 도입하여 개발 편의성을 높임',
                     ssub: [
                         '대부분의 Component 코드 길이를 70줄 이내로 작성'
                     ]
@@ -69,7 +69,7 @@ const PortFolio: projectItem = {
             sub: [
                 {
                     id: 0,
-                    sub: 'EC2, NGINX를 사용하여 서버 배'
+                    sub: 'EC2, NGINX를 사용하여 서버 배포'
                 }
             ]
         }

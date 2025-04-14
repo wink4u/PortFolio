@@ -22,7 +22,7 @@ import { projectItem, showProject } from "../_types/project";
 
 const PortFolio: projectItem = {
     name: "wink4u's PortFolio",
-    date: '2023.06 ~ 2023.08 (9주)',
+    date: '2024.06 ~ 2024.08 (9주)',
     member: '1인 개인프로젝트',
     describe:'프론트엔드 개발자 김승현의 Next 포트폴리오',
     move: 'wink4u_portfolio',

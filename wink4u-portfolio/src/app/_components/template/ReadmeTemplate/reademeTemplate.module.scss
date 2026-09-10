@@ -1,4 +1,18 @@
+@use '../../../../styles/mixins/breakpoint' as bp;
+
 .readmeTemplateContainer {
     padding-top: 60px;
     margin: 0px 200px;
+
+    @include bp.desktop {
+        margin: 0px 80px;
+    }
+
+    @include bp.tablet {
+        margin: 0px 30px;
+    }
+
+    @include bp.mobile {
+        margin: 0px 16px;
+    }
 }

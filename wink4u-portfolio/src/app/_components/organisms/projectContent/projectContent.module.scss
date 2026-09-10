@@ -1,17 +1,37 @@
 @use '../../../../styles/base/variable' as var;
 @use '../../../../styles/mixins/flex' as f;
+@use '../../../../styles/mixins/breakpoint' as bp;
 
 .pjTitle {
     @include f.flex(column, center, center, 10px);
     margin: 20px 0px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+
     .projectName {
-        font-size: 50px;
+        font-size: 5rem;
         font-weight: var.$fw-600;
+
+        @include bp.tablet {
+            font-size: 3.2rem;
+        }
+
+        @include bp.mobile {
+            font-size: 2.4rem;
+        }
     }
 
     .projectDate {
         @include f.flex(row, between, center, 15px);
         font-size: var.$h3;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @include bp.tablet {
+            justify-content: center;
+        }
     }
 
     .projectDescribe {

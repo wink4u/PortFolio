@@ -1,7 +1,7 @@
 import { readmeItem } from "../../_types/readme";
 import WeatherIntro from "@/img/readme_img/Weather/WeatehrIntro.png";
-import WeatherDashboard from "@/img/readme_img/Weather/WeatehrDashboard.png";
-import WeatherChart from "@/img/readme_img/Weather/WeatehrChart.png";
+import WeatherDashboard from "@/img/readme_img/Weather/WeatherDashboard.png";
+import WeatherChart from "@/img/readme_img/Weather/WeatherChart.png";
 import WeatherTest1 from "@/img/readme_img/Weather/WeatherTest1.png";
 import WeatherTest2 from "@/img/readme_img/Weather/WeatherTest2.png";
 

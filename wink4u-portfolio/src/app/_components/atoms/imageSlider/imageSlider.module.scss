@@ -1,12 +1,15 @@
 @use '../../../../styles/base/variable' as var;
 @use '../../../../styles/mixins/flex' as f;
 .imageSlider {
+    width: 100%;
+    max-width: 400px;
     height: 500px;
+    box-sizing: border-box;
     @include f.flex(column, center, center, 0);
     img {
         width: auto;
         height: auto;
-        max-width: 400px;
+        max-width: min(400px, 100%);
         max-height: 500px;
     }
 }

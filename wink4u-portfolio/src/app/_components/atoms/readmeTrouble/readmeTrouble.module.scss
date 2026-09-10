@@ -5,14 +5,14 @@
     margin-bottom: 100px;
 
     .troubleTitle {
-        font-size: 35px;
+        font-size: 3.5rem;
         font-weight: var.$fw-500;
         margin-bottom: 20px;
     }
 
     .troubleContent{
         .troubleTitle {
-            font-size: 25px;
+            font-size: 2.5rem;
             font-weight: var.$fw-400;
             margin-bottom: 20px;
         }
@@ -21,21 +21,22 @@
             margin-bottom: 30px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             .troubleImg{
                 height: auto;
                 width: auto;
-                max-width: 1600px;
+                max-width: min(1600px, 100%);
                 max-height: 800px;
             }
         }
 
         .troubleContent {
-            font-size: 18px;
+            font-size: 1.8rem;
             margin: 20px 0px;
         }
     }
     .solutionTitle{
-        font-size: 25px;
+        font-size: 2.5rem;
         margin: 20px 0px;
     }
     .solutionContent{
@@ -44,17 +45,18 @@
             margin-bottom: 30px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
 
             .solutionImg{
                 height: auto;
                 width: auto;
-                max-width: 700px;
+                max-width: min(700px, 100%);
                 max-height: 500px;
             }
         }
 
         .solutionContent {
-            font-size: 18px;
+            font-size: 1.8rem;
             margin: 20px 0px;
         }
     }

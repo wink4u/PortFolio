@@ -24,14 +24,10 @@
     }
 
     .projectDate {
-        @include f.flex(row, between, center, 15px);
+        @include f.flex(row, center, center, 15px);
         font-size: var.$h3;
         flex-wrap: wrap;
         width: 100%;
-
-        @include bp.tablet {
-            justify-content: center;
-        }
     }
 
     .projectDescribe {

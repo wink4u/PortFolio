@@ -1,0 +1,25 @@
+@use '../base/variable' as var;
+
+@mixin mobile {
+	@media (max-width: #{var.$bp-mobile}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: #{var.$bp-tablet}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: #{var.$bp-desktop}) {
+		@content;
+	}
+}
+
+@mixin wide {
+	@media (max-width: #{var.$bp-wide}) {
+		@content;
+	}
+}

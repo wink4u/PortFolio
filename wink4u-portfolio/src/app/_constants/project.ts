@@ -326,24 +326,24 @@ const WeatherProject: projectItem = {
 const Project: showProject[] = [
     {
         id: 0,
-        project: PortFolio
+        project: WeatherProject,
     },
     {
         id: 1,
-        project: PlayPlace,
+        project: PortFolio
     },
     {
         id: 2,
-        project: Foody,
+        project: PlayPlace,
     },
     {
         id: 3,
-        project: Refill,
+        project: Foody,
     },
     {
         id: 4,
-        project: WeatherProject,
-    }
+        project: Refill,
+    },
 ]
 
 export default Project

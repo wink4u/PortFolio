@@ -29,7 +29,7 @@
         .modalHeader {
 
             padding: 36px 80px 20px;
-            font-size: 31px;
+            font-size: 3.1rem;
             font-weight: bold;
 
             .closeButton {
@@ -70,7 +70,7 @@
         @include f.flex(column, center, center, 20px);
 
         span {
-            font-size: 36px;
+            font-size: 3.6rem;
             font-weight: var.$fw-600;
         }
     }

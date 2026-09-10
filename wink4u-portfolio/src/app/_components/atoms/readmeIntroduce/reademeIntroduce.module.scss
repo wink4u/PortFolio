@@ -22,6 +22,8 @@
         .introduceDescribe {
             @include f.flex(column, center, start, 10px);
             margin-left: 20px;
+            font-size: 1.8rem;
+            line-height: 1.6;
         }
 
         @include bp.tablet {

@@ -18,6 +18,7 @@ import WPortFolio1 from "@/img/project_img/Portfolio1.png";
 import WPortFolio2 from "@/img/project_img/Portfolio2.png";
 import WPortFolio3 from "@/img/project_img/Portfolio3.png";
 import WPortFolio4 from "@/img/project_img/Portfolio4.png";
+import Weather1 from "@/img/project_img/Weather1.png";
 import { projectItem, showProject } from "../_types/project";
 
 const PortFolio: projectItem = {
@@ -262,6 +263,66 @@ const Refill: projectItem = {
     ]
 }
 
+const WeatherProject: projectItem = {
+    name: 'Weather Dashboard',
+    date: '2026.05 ~ 2026.08 (개인 프로젝트)',
+    member: '1인 개인 프로젝트',
+    describe: '기상청 단기예보 API 데이터를 지도 기반으로 시각화하는 날씨 대시보드',
+    move: 'weather',
+    skill: {
+        Frontend: 'TypeScript, React, Vite, Recoil, Chart.js, Tailwind CSS',
+        DevOps: 'Playwright, Storybook',
+    },
+    whatIdid: [
+        {
+            id: 0,
+            main: 'Frontend 개발',
+            sub: [
+                {
+                    id: 0,
+                    sub: '지도 좌표 기반 날씨 대시보드 개발',
+                    ssub: [
+                        'HTML5 Geolocation으로 획득한 위경도를 기상청 격자 좌표(nx, ny)로 변환하여 단기예보 API 조회',
+                        '관심 지역(서울 강남구, 부산 해운대구, 제주 제주시) 카드 선택 시 Recoil 전역 상태를 갱신하여 지도·차트 데이터 실시간 연동'
+                    ]
+                },
+                {
+                    id: 1,
+                    sub: 'Chart.js 기반 데이터 시각화',
+                    ssub: [
+                        '시간대별 기온·강수확률 라인 차트와 풍속 바 차트 구현',
+                        'Chart.js 커스텀 플러그인을 작성하여 바 차트 상단에 수치를 직접 표시'
+                    ]
+                },
+                {
+                    id: 2,
+                    sub: 'Atomic Design과 Storybook을 활용한 컴포넌트 관리'
+                }
+            ]
+        },
+        {
+            id: 1,
+            main: '테스트 & AI 협업 도구',
+            sub: [
+                {
+                    id: 0,
+                    sub: 'Playwright를 활용한 E2E 테스트 도입'
+                },
+                {
+                    id: 1,
+                    sub: 'Gemini와 MCP(Model Context Protocol)를 프로젝트에 연동',
+                    ssub: [
+                        '이를 기반으로 Vibe 코딩을 진행하여 컴포넌트 문제점 분석 및 개선 보고서(improvements.txt)를 도출'
+                    ]
+                }
+            ]
+        }
+    ],
+    imgs: [
+        Weather1,
+    ]
+}
+
 const Project: showProject[] = [
     {
         id: 0,
@@ -270,7 +331,7 @@ const Project: showProject[] = [
     {
         id: 1,
         project: PlayPlace,
-    }, 
+    },
     {
         id: 2,
         project: Foody,
@@ -278,6 +339,10 @@ const Project: showProject[] = [
     {
         id: 3,
         project: Refill,
+    },
+    {
+        id: 4,
+        project: WeatherProject,
     }
 ]
 
